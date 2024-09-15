@@ -18,15 +18,10 @@ RUN apk add --no-cache \
   php83-gd \
   php83-intl \
   php83-mbstring \
-  php83-mysqli \
   php83-opcache \
-  php83-openssl \
-  php83-phar \
+#   php83-openssl \
   php83-session \
   php83-tokenizer \
-  php83-xml \
-  php83-xmlreader \
-  php83-xmlwriter \
   supervisor
 
 # Configure nginx - http
