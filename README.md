@@ -24,3 +24,12 @@
 REPOSITORY     TAG       IMAGE ID       CREATED        SIZE
 hello-philip   latest    0edc5c366f1f   43 hours ago   9.57MB
 ```
+
+## usage
+
+`docker run -p 80:8080 hello-nginx`
+
+## :link:
+
+- <https://github.com/erseco/alpine-php-webserver>
+  - <https://github.com/TrafeX/docker-php-nginx/tree/master>
