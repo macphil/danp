@@ -65,10 +65,10 @@
 }
 
 .Display-Humidity-Front {
+  color: black;
   z-index: 100;
   position: absolute;
   top: 320px;
   left: 450px;
   font-size: 50px;
-  text-shadow: 2px 2px rgba(0, 0, 0);
 }
