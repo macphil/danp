@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Terrassen - Thermometer</title>
+    <link rel="stylesheet" href="resources/zuhause.css" />
+    <link rel="stylesheet" href="resources/thermometer.css" />
+    <script src="resources/fetch.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <div class="center">
+        <span style="font-size: 10em">&#xf308; &#xe776; &#xe60e;</span>
+        <pre>docker.zuhause.macphil.de<br /><i id="dyndns"></i></pre>
+        <div class="Display-Frame">
+          <span class="Display-Time-Background D7MI">88:88</span>
+          <span class="Display-Time-Front D7MI" id="logTime"></span>
+          <span class="Display-Temperature-Background D7MBI">-88.8</span>
+          <span class="Display-Temperature-Front D7MBI" id="logTemp"></span>
+          <span class="Display-Temperature-Unit">°C</span>
+          <span class="Display-Humidity-Background D7MBI">88</span>
+          <span class="Display-Humidity-Front D7MBI" id="logHum"></span>
+          <span class="Display-Humidity-Unit">%</span>
+        </div>
+        Used Things:
+        <ul>
+          <li>Docker: &#xf308; (f308)</li>
+          <li>Alpine: &#xf300; (f300)</li>
+          <li>NGINX: &#xe776; (e776)</li>
+          <li>python: &#xe73c; (e73c)</li>
+          <li>HTML: &#xe60e; (e60e)</li>
+          <li>CSS: &#xe749; (e749)</li>
+        </ul>
+      </div>
+    </main>
+    <footer id="footer">
+      <ul class="copyright">
+        <li>&copy; Philip</li>
+      </ul>
+    </footer>
+  </body>
+</html>
