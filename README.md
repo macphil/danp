@@ -20,9 +20,9 @@
 `❯ docker rmi $(docker images -f "dangling=true" -q)`
 
 ```
-❯ docker images hello-philip
+❯ docker images hello-nginx
 REPOSITORY     TAG       IMAGE ID       CREATED        SIZE
-hello-philip   latest    0edc5c366f1f   43 hours ago   9.57MB
+hello-nginx    latest    ebdf6c77d4df   32 minutes ago   17.5MB
 ```
 
 ## usage
