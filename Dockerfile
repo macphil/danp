@@ -12,7 +12,7 @@ COPY config/nginx.non-root.conf /etc/nginx/nginx.conf
 
 RUN nginx -t
 # Add application
-COPY src /usr/share/nginx/html
+COPY app /app
 
 # Expose the port nginx is reachable on
 EXPOSE 8080
