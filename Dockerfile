@@ -4,9 +4,8 @@ LABEL Description="home information based on plain html unsing Nginx"
 
 RUN apk add --no-cache \
   curl \
-  nginx
-
-RUN rm -rf /var/cache/apk/*
+  nginx && \
+  rm -rf /var/cache/apk/*
 
 # Copy basic files
 COPY config/nginx.non-root.conf /etc/nginx/nginx.conf

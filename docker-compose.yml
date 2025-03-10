@@ -1,0 +1,13 @@
+services:
+  zerocontainer:
+    image: ghcr.io/macphil/zero-container:alpha.0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 8085:8080
+    networks:
+      - internal
+networks:
+  internal:
+    driver: bridge
