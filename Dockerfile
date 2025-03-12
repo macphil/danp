@@ -4,19 +4,21 @@ LABEL Description="home information based on plain html unsing Nginx"
 
 RUN apk add --no-cache \
   curl \
-  nginx && \
+  nginx \
+  php \
+  php-fpm && \
   rm -rf /var/cache/apk/*
 
 # Copy basic files
 COPY config/nginx.non-root.conf /etc/nginx/nginx.conf
 
-RUN nginx -t
 # Add application
 COPY app /app
+
+RUN nginx -t && php-fpm83 -D
 
 # Expose the port nginx is reachable on
 EXPOSE 8080
 
-# root user will run 'nginx: master process'
-# nobody user will run 'nginx: worker process' as dictated in the nginx.non-root.conf
-CMD ["nginx", "-g", "daemon off;"]
+# CMD ["nginx", "-g", "daemon off;"]
+CMD ["sh", "-c", "nginx && php-fpm83 -F"]

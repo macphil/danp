@@ -1,0 +1,5 @@
+<?php
+
+phpinfo(INFO_GENERAL + INFO_MODULES + INFO_VARIABLES);
+
+?>
