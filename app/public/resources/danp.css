@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("UbuntuMonoNerdFontComplete.ttf") format("woff");
+}
+
+body {
+  font-size: 0.9em;
+  font-family: "Ubuntu";
+
+  margin: 10px 50px;
+  color: #333333;
+  background-color: aliceblue;
+}
+
+#figlet {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 10px 10px 0px 10px;
+  font-weight: 900;
+  text-shadow: 2px 2px silver;
+}
+
+td.text {
+  text-align: center;
+}
+
+#fa_docker {
+  font-size: 10em;
+  width: 1em;
+}
+#fa_alpine {
+  font-size: 10em;
+  width: 1em;
+}
+#fa_nginx {
+  font-size: 10em;
+  width: 1em;
+}
+#fa_php {
+  font-size: 10em;
+  width: 1em;
+}

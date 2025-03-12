@@ -1,11 +1,11 @@
 services:
-  zerocontainer:
-    image: ghcr.io/macphil/zero-container:alpha.0.1
+  danp:
+    image: ghcr.io/macphil/danp:latest
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - 8085:8080
+      - 80:8080
     networks:
       - internal
 networks:
