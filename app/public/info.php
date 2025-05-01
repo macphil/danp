@@ -1,5 +1,5 @@
 <?php
-if(isset($_REQUEST)){
+if(isset($_REQUEST) && count($_REQUEST) > 0 ){
     header("Content-Type: application/json");
     $response = array(
         "_REQUEST" => $_REQUEST,
