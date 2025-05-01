@@ -1,0 +1,7 @@
+POST http://localhost/info.php
+?foo=bar
+Content-Type: application/json
+
+{
+    "foo1": "bar1"
+}
