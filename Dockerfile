@@ -1,4 +1,4 @@
-FROM alpine:3.20.6
+FROM alpine:3.21.3
 LABEL Maintainer="Philip Schröder <post@macphil.de>"
 LABEL Description="A minimal base image using Alpine, NGiNX & PHP"
 
